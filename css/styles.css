@@ -1,4 +1,10 @@
-
+body{
+	margin: 20px auto;
+	max-width: 90%;
+	font-family: 'Patrick Hand SC', cursive;
+	background-color: #247FB5;
+	color:#C7F027;
+}
 
 /* ==========================================================================
    Video
@@ -26,7 +32,113 @@
 	width: 800px;
 	max-width: 90%;
 }
+/* ==========================================================================
+   Responsive Image
+   ========================================================================== */
 img {
 	max-width: 100%;
 	height: auto;
+}
+
+/* ie8 hack */
+@media \0screen {
+  img { 
+  	width: auto; /* for ie 8 */
+  }
+}
+/* ==========================================================================
+   Min-width
+   ========================================================================== */
+input[type="text"] {
+	max-width: 40%;
+	min-width: 140px;
+	width: 400px;
+}
+
+textarea{
+	height: 180px;
+	width: 96%;
+}
+
+input[type="text"], textarea{
+	background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #DDDDDD;
+    padding: 8px 5px;
+}
+/* ==========================================================================
+   Relative Values
+   ========================================================================== */
+.commentlist {
+    margin: 0;
+    padding: 0;
+}
+.commentlist li {
+    clear: both;
+    list-style: none outside none;
+    margin: 0 0 10px;
+    overflow: hidden;
+}
+.commentlist .comment-text {
+    overflow: hidden;
+}
+.commentlist cite {
+    font-size: 140%;
+    font-weight: bold;
+}
+.commentlist ul {
+    margin-left: 11%;
+    margin-top: 20px;
+    padding: 0;
+}
+/* ==========================================================================
+   Font Size & Relative Padding
+   ========================================================================== */
+.fontsize-demo .box {
+    line-height: 140%;
+    margin: 30px 0;
+}
+.fontsize-demo .smaller {
+    font-size: 80%;
+    line-height: 130%;
+}
+.fontsize-demo .bigger {
+    font-size: 120%;
+}
+
+.relative-padding {
+    background: none repeat scroll 0 0 #000;
+    border: 1px solid #DDDDDD;
+    padding: 3% 5%;
+}
+/* ==========================================================================
+   Overflow:hidden Trick
+   ========================================================================== */
+.overflow-demo {
+    overflow: hidden;
+}
+.overflow-demo .item {
+    float: left;
+    margin-right: 5%;
+    width: 45%;
+}
+.overflow-demo .item img {
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.overflow-demo .item .content {
+    min-width: 130px;
+    overflow: hidden;
+}
+.overflow-demo h4 {
+    color: #999;
+    font-size: 1.4em;
+    margin: 0 0 5px;
+    padding: 0;
+}
+/* ==========================================================================
+   Overflow:hidden Trick
+   ========================================================================== */
+.break-word {
+		word-wrap: break-word;
 }
